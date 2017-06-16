@@ -1,0 +1,16 @@
+{
+    "timeDelay": 5000,
+    "cycleMode": true,
+    "clockWindow": "win2",
+    "userUrl": [],
+    "contentPriority": {
+        "5.png": 1,
+        "2.png": 10,
+        "3.png": 1
+    },
+    "userDir": "/Users/ArvindB/Documents/images/",
+    "clockAlignment": {
+        "vertical": "bottom",
+        "horizontal": "right"
+    }
+}

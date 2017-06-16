@@ -1,0 +1,128 @@
+<html>
+
+<head>
+    <title>Control Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="/stylesheets/config.css">
+</head>
+
+<body>
+    <div id="loginModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="text-center">Settings</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group input-group-lg" data-toggle="buttons-radio">
+                        <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-time" aria-hidden="true"></span></span>
+                        <input type="text" class="form-control" id="time" placeholder="Time Delay" aria-describedby="sizing-addon1">
+                    </div>
+                    <br>
+                    <label class="pagination-centered" style="text-align:center;display: block">Slideshow Mode</label>
+                    <div class="btn-group btn-group-justified btn-group-lg" data-toggle="buttons">
+                        <label class="btn btn-default btn-lg" id="cycle">
+                            <input type="radio" name="options" autocomplete="off" checked> Cycle
+                        </label>
+                        <label class="btn btn-default btn-lg" id="swap">
+                            <input type="radio" name="options" autocomplete="off"> Swap
+                        </label>
+                    </div>
+                    <br>
+                    <label class="pagination-centered" style="text-align:center;display: block">Clock Widget</label>
+                    <div class="btn-group btn-group-justified btn-group-lg" data-toggle="buttons">
+                        <label class="btn btn-default btn-lg" id="cOne">
+                            <input type="radio" name="options" autocomplete="off" checked> Window 1
+                        </label>
+                        <label class="btn btn-default btn-lg" id="cTwo">
+                            <input type="radio" name="options" autocomplete="off"> Window 2
+                        </label>
+                        <label class="btn btn-default btn-lg" id="cThree">
+                            <input type="radio" name="options" autocomplete="off"> Window 3
+                        </label>
+                    </div>
+                    <br>
+                    <label class="pagination-centered" style="text-align:center;display: block">Add Website</label>
+					<form class="form-inline">
+						<div class="form-group">
+							<div class="input-group input-group-lg" data-toggle="buttons-radio">
+								<span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></span>
+								<input type="text" autocomplete="off" class="width-semi form-control" id="url" placeholder="http://google.com" aria-describedby="sizing-addon1">
+							</div>
+							<div class="btn-group btn-group-justified btn-group-lg input-group-addon-right" data-toggle="buttons">
+								<label class="btn btn-default btn-lg active" id="urlAdd">
+									<input type="radio" name="options" autocomplete="off" checked> <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+								</label>
+								<label class="btn btn-default btn-lg" id="urlRemove">
+									<input type="radio" name="options" autocomplete="off"> <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+								</label>
+							</div>
+						</div>
+					</form>
+                    <br>
+                    <label class="pagination-centered" style="text-align:center;display: block">Change External Directory</label>
+                    <div class="input-group input-group-lg" data-toggle="buttons-radio">
+                        <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span></span>
+                        <input type="text" autocomplete="off" class="form-control" id="dir" placeholder="/user/documents/images" aria-describedby="sizing-addon1">
+                    </div>
+                    <br>
+					<label class="pagination-centered" style="text-align:center;display: block">Set Clock Position</label>
+					<div class="tbl-group">
+	                    <div class="btn-group btn-group-justified btn-group-lg" data-toggle="buttons">
+	                        <label class="btn btn-default btn-lg btn-tl" id="tl">
+	                            <input type="radio" name="options" autocomplete="off" checked> Top Left
+	                        </label>
+	                        <label class="btn btn-default btn-lg btn-tr" id="tr">
+	                            <input type="radio" name="options" autocomplete="off"> Top Right
+	                        </label>
+	                    </div>
+						<div class="btn-group btn-group-justified btn-group-lg" data-toggle="buttons">
+	                        <label class="btn btn-default btn-lg btn-bl" id="bl">
+	                            <input type="radio" name="options" autocomplete="off" checked> Bottom Left
+	                        </label>
+	                        <label class="btn btn-default btn-lg btn-br" id="br">
+	                            <input type="radio" name="options" autocomplete="off"> Bottom Right
+	                        </label>
+	                    </div>
+					</div>
+					<br>
+                    <label class="pagination-centered" style="text-align:center;display: block">Content Priority</label>
+					<form class="form-inline" style="text-align:center">
+						<div class="row">
+						    <div class="col-md-6">
+								<div class="input-group input-group-lg" data-toggle="buttons-radio">
+									<span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-file" aria-hidden="true"></span></span>
+									<input type="text" autocomplete="off" class="form-control" id="priorityFile" placeholder="image.jpg" aria-describedby="sizing-addon1">
+								</div>
+							</div>
+						    <div class="col-md-6">
+								<div class="input-group input-group-lg" data-toggle="buttons-radio">
+									<span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></span>
+									<input type="text" autocomplete="off" class="form-control" id="priorityValue" placeholder="10" aria-describedby="sizing-addon1">
+								</div>
+						    </div>
+				    	</div>
+					</form>
+					<br>
+                    <div style="text-align: center">
+                        <form id="uploadForm" enctype="multipart/form-data" action="/api/photo" method="post">
+                            <label class="btn btn-default btn-lg" for="my-file-selector">
+                                <input id="my-file-selector" multiple name="userPhoto" type="file" style="display:none;" onchange="$('#upload-file-info').html($(this).val())"> Upload File
+                            </label>
+                            <span class='label label-default' id="upload-file-info"></span>
+                        </form>
+                        <div class="modal-footer">
+                            <div class="col-md-12">
+                                <button type="submit" name="submit" form="uploadForm" class="btn" data-dismiss="modal" aria-hidden="true" onclick="handleInput()">Save/Update</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+			<script src="http://underscorejs.org/underscore-min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+            <script src="javascripts/config.js"></script>
+</body>
+</html>

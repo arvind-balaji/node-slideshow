@@ -1,0 +1,44 @@
+img {
+    /*position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    display: block;
+    margin: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;*/
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#txt {
+    top: 0px;
+    font-size: 400%;
+    font-family: "helvetica";
+}
+
+.clock {
+    display: inline-block;
+    width: auto;
+    position: absolute;
+    bottom: 0%;
+    right: calc(0% - 75px);
+}
+
+body {
+    background-position: center;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -0%)
+}
+
+.flip-clock-wrapper ul li a div.up:after{
+    width: 0px;
+}

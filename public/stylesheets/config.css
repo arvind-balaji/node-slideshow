@@ -1,0 +1,29 @@
+.btn-tr {
+	border-bottom-right-radius: 0 !important;
+}
+.btn-tl {
+	border-bottom-left-radius: 0 !important;
+}
+.btn-br {
+	border-top-right-radius: 0 !important;
+}
+.btn-bl {
+	border-top-left-radius: 0 !important;
+}
+#loginModal{
+	/*width:900px;*/
+	position: inherit;
+}
+.modal-dialog {
+	width: 800px;
+}
+
+.width-semi{
+	width: 225% !important;
+}
+
+.input-group-addon-right{
+	width: 20% !important;
+	margin-left: 40% !important;
+	display: inherit;
+}
